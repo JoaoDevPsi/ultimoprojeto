@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+   .product-card {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  }
+  .product-image {
+    max-width: 100%;
+    height: auto;
+  }
+  #cart {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  #cart .cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  #cart .cart-item img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+  }
+  #cart .quantity-controls {
+    display: flex;
+  }
+  #cart .quantity-controls button {
+    margin: 0 5px;
+  }
+  #cart-total {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  #cart ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  </style>
+</head>
+
+<body>
+
+  <h3>Clique no botão abaixo e descubra as suas futuras compras:</h3>
+
+  <button id="showProducts">Mostrar Produtos</button>
+
+  <div id="productContainer"></div>
+
+  <div id="cart">
+
+    <h2>Carrinho de Compras</h2>
+
+    <button id="clearCart">Limpar Carrinho</button>
+
+    <ul id="cartList"></ul>
+
+    <button id="buyCart">Comprar</button>
+  </div>
+
+  <script src="projetocarrinho.js"></script>
+</body>
+
+</html>
